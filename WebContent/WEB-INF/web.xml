@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Servlet_Request_Redirection</display-name>
+  <welcome-file-list>
+    <welcome-file>welcome.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>IdeaServlet</display-name>
+    <servlet-name>IdeaServlet</servlet-name>
+    <servlet-class>com.app.IdeaServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>IdeaServlet</servlet-name>
+    <url-pattern>/idea</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>GoogleServlet</display-name>
+    <servlet-name>GoogleServlet</servlet-name>
+    <servlet-class>com.app.GoogleServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GoogleServlet</servlet-name>
+    <url-pattern>/google</url-pattern>
+  </servlet-mapping>
+</web-app>
